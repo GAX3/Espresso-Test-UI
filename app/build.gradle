@@ -7,7 +7,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.example.espressotestui"
+        applicationId "com.example.espresso_test_ui"
         minSdk 22
         targetSdk 32
         versionCode 1

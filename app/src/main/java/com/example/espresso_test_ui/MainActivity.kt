@@ -1,4 +1,4 @@
-package com.example.espressotestui
+package com.example.espresso_test_ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

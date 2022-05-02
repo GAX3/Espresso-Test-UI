@@ -1,4 +1,4 @@
-package com.example.espressotestui
+package com.example.espresso_test_ui
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.example.espressotestui", appContext.packageName)
+        assertEquals("com.example.espresso_test_ui", appContext.packageName)
     }
 }
