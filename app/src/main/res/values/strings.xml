@@ -3,4 +3,11 @@
     <string name="prueba_espresso">Prueba Espresso!</string>
     <string name="elemento_textview">Elemento TextView</string>
     <string name="hint_age">Introduce tu edad</string>
+
+    <string name="login_username">Username</string>
+    <string name="login_password">Password</string>
+    <string name="login_username_error">Username debe tener 4 caracteres</string>
+    <string name="login_password_error">Password debe tener 4 caracteres</string>
+    <string name="btnLogin">LOGIN</string>
+
 </resources>

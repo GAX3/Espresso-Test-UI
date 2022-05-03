@@ -1,5 +1,6 @@
 package com.example.espresso_test_ui
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -29,6 +30,8 @@ class MainActivity2 : AppCompatActivity() {
 
         mBinding.btnSecond.setOnClickListener {
             Toast.makeText(this, "Go to Login Activity", Toast.LENGTH_SHORT).show()
+            var intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
         }
 
 
