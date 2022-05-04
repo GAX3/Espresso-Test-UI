@@ -55,11 +55,19 @@
 
   <Button
     android:id="@+id/btnClick"
-      android:layout_width="wrap_content"
+      android:layout_width="200dp"
       android:layout_height="wrap_content"
       android:text="Login Activity"
       android:layout_marginLeft="16dp"
     />
+
+  <Button
+      android:id="@+id/btnGoToRV"
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:text="RV Activity"
+      android:layout_marginLeft="16dp"
+      />
 
 
 </LinearLayout>

@@ -11,6 +11,7 @@ import androidx.test.espresso.intent.matcher.IntentMatchers.hasComponent
 import androidx.test.espresso.intent.matcher.IntentMatchers.hasExtra
 import androidx.test.espresso.intent.rule.IntentsTestRule
 import androidx.test.espresso.matcher.ViewMatchers.*
+import androidx.test.ext.junit.rules.activityScenarioRule
 
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
 import org.hamcrest.Matchers.allOf
@@ -23,7 +24,8 @@ import org.junit.runner.RunWith
 
 class LoginActivityTest{
 
-    //@get:Rule var activityScenarioRule = activityScenarioRule<LoginActivity>()
+    @get:Rule
+    var activityScenarioRule = activityScenarioRule<LoginActivity>()
 
     @get:Rule
     val intentsTestRule = IntentsTestRule(LoginActivity::class.java)

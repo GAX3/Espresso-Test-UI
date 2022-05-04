@@ -19,6 +19,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        mBinding.btnGoToRV.setOnClickListener {
+            val intent = Intent(this, RecyclerActivity::class.java)
+            startActivity(intent)
+        }
+
 
     }
 }
