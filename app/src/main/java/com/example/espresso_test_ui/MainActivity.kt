@@ -24,6 +24,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        mBinding.btnGoToSpinner.setOnClickListener {
+            val intent = Intent(this, SpinnerActivity::class.java)
+            startActivity(intent)
+        }
+
 
     }
 }

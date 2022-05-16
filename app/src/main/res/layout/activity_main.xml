@@ -69,5 +69,13 @@
       android:layout_marginLeft="16dp"
       />
 
+  <Button
+      android:id="@+id/btnGoToSpinner"
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:text="Spinner Activity"
+      android:layout_marginLeft="16dp"
+      />
+
 
 </LinearLayout>

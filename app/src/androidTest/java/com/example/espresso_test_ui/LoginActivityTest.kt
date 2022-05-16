@@ -13,6 +13,7 @@ import androidx.test.espresso.intent.rule.IntentsTestRule
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.rules.activityScenarioRule
 
+
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
 import org.hamcrest.Matchers.allOf
 import org.hamcrest.Matchers.not
@@ -26,9 +27,6 @@ class LoginActivityTest{
 
     @get:Rule
     var activityScenarioRule = activityScenarioRule<LoginActivity>()
-
-    @get:Rule
-    val intentsTestRule = IntentsTestRule(LoginActivity::class.java)
 
     @Test
     fun errorMessageIsNotShowing(){
@@ -63,10 +61,15 @@ class LoginActivityTest{
 
     @Test
     fun loginPassedTest(){
+        Thread.sleep(2000)
         onView(withId(R.id.edtLoginUsername)).perform(typeText("abcd"))
+        Thread.sleep(2000)
         onView(withId(R.id.edtLoginPassword)).perform(typeText("1234"))
+        Thread.sleep(2000)
         onView(withId(R.id.btnLogin)).perform(click())
+        Thread.sleep(5000)
         onView(withId(R.id.tvErrorLogin)).check(matches(not(isDisplayed())))
+        Thread.sleep(5000)
     }
 
     @Test

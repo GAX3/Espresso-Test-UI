@@ -26,6 +26,7 @@ class RecyclerActivityTest{
 
     @Test
     fun checkTextTest(){
+        Thread.sleep(5000)
         onView(withText("Alberto")).check(matches(isDisplayed()))
     }
 
